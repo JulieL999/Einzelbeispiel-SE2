@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/matrEingeben"
         android:layout_width="318dp"
         android:layout_height="31dp"
         android:layout_marginStart="20dp"
@@ -15,30 +15,61 @@
         android:layout_marginEnd="20dp"
         android:text="Gib deine Matrikelnummer ein"
         android:textAlignment="center"
+        android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.521"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
 
     <EditText
-        android:id="@+id/editTextNumberSigned"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/matrNum"
+        android:layout_width="210dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="13dp"
         android:ems="10"
+        android:hint="Eingabefeld"
         android:inputType="numberSigned"
         android:minHeight="48dp"
-        tools:layout_editor_absoluteX="102dp"
-        tools:layout_editor_absoluteY="110dp" />
+        app:layout_constraintBottom_toTopOf="@+id/antwortServer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/matrEingeben" />
 
     <Button
         android:id="@+id/button"
-        android:layout_width="136dp"
-        android:layout_height="48dp"
+        android:layout_width="137dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="138dp"
+        android:layout_marginBottom="30dp"
+        android:onClick="onClick"
         android:text="abschicken"
         android:textAlignment="center"
         android:visibility="visible"
-        tools:layout_editor_absoluteX="152dp"
-        tools:layout_editor_absoluteY="602dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/antwortServer"
         tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/antwortServer"
+        android:layout_width="249dp"
+        android:layout_height="246dp"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="125dp"
+        android:text="Antwort vom Server"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/matrNum" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
