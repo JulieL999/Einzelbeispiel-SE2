@@ -41,9 +41,9 @@
 
     <Button
         android:id="@+id/button"
-        android:layout_width="137dp"
-        android:layout_height="51dp"
-        android:layout_marginStart="136dp"
+        android:layout_width="145dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="30dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="138dp"
         android:layout_marginBottom="30dp"
@@ -53,7 +53,7 @@
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/antwortServer"
         tools:visibility="visible" />
@@ -71,5 +71,20 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/matrNum" />
+
+    <Button
+        android:id="@+id/quersumme"
+        android:layout_width="166dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:text="quersumme berechnen"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.125"
+        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/antwortServer" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
